@@ -1,29 +1,52 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/LeetCode-250%2B%20Problems-skyblue?style=for-the-badge&logo=leetcode&logoColor=white" /> 
+  <a href="https://leetcode.com/u/saksham_gaikwad/">
+    <img src="https://img.shields.io/badge/LeetCode-250%2B%20Problems-skyblue?style=for-the-badge&logo=leetcode&logoColor=white" />
+  </a>
+
   <img src="https://img.shields.io/badge/DSA-Mastery-blueviolet?style=for-the-badge&logo=hackerrank&logoColor=white" />
+
+  <a href="https://leetcode.com/u/saksham_gaikwad/">
+    <img src="https://img.shields.io/badge/View-LeetCode%20Profile-orange?style=for-the-badge&logo=leetcode&logoColor=white" />
+  </a>
 </p>
- LeetCode Solutions
 
-Welcome to my LeetCode Solutions repository.
+<h1 align="center">LeetCode Solutions</h1>
 
-This repository contains my solutions to LeetCode problems as part of my journey to strengthen my understanding of Data Structures and Algorithms, improve problem-solving skills, and prepare for software engineering interviews.
+<p align="center">
+A curated collection of LeetCode solutions focused on mastering Data Structures and Algorithms, strengthening problem-solving skills, and preparing for software engineering interviews.
+</p>
+
+---
 
 ## About
 
-The purpose of this repository is to:
+Welcome to my LeetCode Solutions repository.
 
-* Practice Data Structures and Algorithms consistently
-* Improve analytical and problem-solving abilities
-* Prepare for coding interviews
-* Track learning progress
-* Study optimized approaches and coding patterns
+This repository contains my personal solutions to LeetCode problems solved throughout my Data Structures and Algorithms journey. The goal is to continuously improve logical thinking, coding efficiency, and interview preparation through consistent practice.
 
-Each solution focuses on:
+Each solution is written with a focus on:
 
 * Clean and readable code
-* Optimized time and space complexity
+* Optimized approaches
 * Standard coding practices
-* Maintainability and clarity
+* Time and space complexity analysis
+* Long-term maintainability
+
+---
+
+## LeetCode Profile
+
+You can view my LeetCode profile here:
+
+🔗 **Profile:** https://leetcode.com/u/saksham_gaikwad/
+
+### Current Focus
+
+* Data Structures and Algorithms
+* Competitive Programming
+* Problem Solving
+* Coding Interview Preparation
+* Algorithm Optimization
 
 ---
 
@@ -53,6 +76,9 @@ LeetCode-Solutions/
 ├── BitManipulation/
 ├── SlidingWindow/
 ├── TwoPointers/
+├── Heap/
+├── Trie/
+├── DSU/
 └── SQL/
 ```
 
@@ -60,33 +86,61 @@ LeetCode-Solutions/
 
 ## Topics Covered
 
+### Data Structures
+
 * Arrays
 * Strings
 * Linked Lists
-* Stacks and Queues
-* Trees and Binary Search Trees
+* Stacks
+* Queues
+* Hash Maps
+* Hash Sets
+* Trees
+* Binary Search Trees
+* Heaps
+* Tries
 * Graphs
+* Disjoint Set Union (DSU)
+
+### Algorithms
+
+* Binary Search
+* Recursion
+* Backtracking
 * Dynamic Programming
 * Greedy Algorithms
-* Recursion and Backtracking
-* Binary Search
 * Sliding Window
 * Two Pointers
-* Hashing
 * Bit Manipulation
-* Heap and Priority Queue
-* Trie
-* Disjoint Set Union (DSU)
+* Graph Algorithms
+* Shortest Path Algorithms
+* Topological Sorting
+* Union Find
+* Prefix Sum
+* Monotonic Stack
+
+### SQL
+
+* Basic Queries
+* Joins
+* Aggregations
+* Window Functions
+* Subqueries
+* Database Optimization Problems
 
 ---
 
 ## Objectives
 
-* Build strong DSA fundamentals
+This repository is built to:
+
+* Strengthen DSA fundamentals
 * Master common interview patterns
 * Improve coding efficiency
-* Maintain a consistent problem-solving routine
-* Prepare for technical interviews at top technology companies
+* Maintain consistency in problem solving
+* Prepare for technical interviews
+* Track learning progress over time
+* Build a strong problem-solving portfolio
 
 ---
 
@@ -95,12 +149,13 @@ LeetCode-Solutions/
 Each solution may include:
 
 * Problem Name
-* Approach
-* Code Implementation
+* Problem Link
+* Approach Explanation
+* Optimized Code
 * Time Complexity
 * Space Complexity
 
-Example:
+### Example
 
 ```cpp
 // Problem: Two Sum
@@ -124,29 +179,58 @@ public:
 };
 ```
 
+### Complexity Analysis
+
+```text
 Time Complexity: O(n)
 
 Space Complexity: O(n)
+```
 
 ---
 
-## Repository Purpose
+## Why This Repository?
 
 This repository serves as:
 
-* A personal learning record
-* A revision resource for Data Structures and Algorithms
-* An interview preparation reference
-* A demonstration of continuous learning and coding practice
+* A personal learning journal
+* A DSA revision resource
+* An interview preparation guide
+* A collection of optimized coding solutions
+* Proof of continuous learning and consistency
+
+---
+
+## Learning Goals
+
+* Solve problems consistently
+* Improve algorithmic thinking
+* Master advanced DSA concepts
+* Learn multiple approaches to the same problem
+* Build interview-ready coding skills
+* Prepare for top software engineering roles
 
 ---
 
 ## Contributions
 
-This repository is maintained for educational and learning purposes. Suggestions and improvements are welcome.
+This repository is maintained primarily for educational purposes and personal learning.
+
+Suggestions, improvements, and discussions are always welcome.
+
+---
+
+## Connect With Me
+
+* LeetCode: https://leetcode.com/u/saksham_gaikwad/
+* GitHub: https://github.com/YOUR_GITHUB_USERNAME
+* LinkedIn: https://linkedin.com/in/YOUR_LINKEDIN_USERNAME
 
 ---
 
 ## License
 
-This project is intended for educational use and personal learning.
+This repository is intended for educational purposes, learning, and interview preparation.
+
+Feel free to explore the solutions, learn from them, and use them as a reference for your own DSA journey.
+
