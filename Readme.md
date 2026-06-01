@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://img.shields.io/badge/LeetCode-200%2B%20Problems-skyblue?style=for-the-badge&logo=leetcode&logoColor=white" /> 
+  <img src="https://img.shields.io/badge/DSA-Mastery-blueviolet?style=for-the-badge&logo=hackerrank&logoColor=white" />
+</p>
 # LeetCode Solutions
 
 Welcome to my LeetCode Solutions repository.
