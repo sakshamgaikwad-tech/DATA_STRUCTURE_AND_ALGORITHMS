@@ -8,7 +8,13 @@
 
 // Return the maximum possible total value you can achieve.
 
- class Solution {
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+class Solution {
 public:
     long long maxTotalValue(vector<int>& nums, int k) {
 
@@ -18,3 +24,16 @@ public:
         return 1LL * k * (Max - Min);
     }
 };
+
+int main() {
+    Solution obj;
+
+    vector<int> nums = {1, 3, 7, 10};
+    int k = 5;
+
+    long long result = obj.maxTotalValue(nums, k);
+
+    cout << "Maximum Total Value: " << result << endl;
+
+    return 0;
+}
