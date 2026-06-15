@@ -33,6 +33,12 @@
 
 // solution:
 
+#include <iostream>
+#include <vector>
+#include <string>
+
+using namespace std;
+
 class Solution {
 public:
     string convert(string s, int numRows) {
@@ -60,6 +66,15 @@ public:
     }
 };
 
+int main() {
+    Solution obj;
 
+    string s = "PAYPALISHIRING";
+    int numRows = 3;
 
- 
+    string result = obj.convert(s, numRows);
+
+    cout << "Converted String: " << result << endl;
+
+    return 0;
+}
