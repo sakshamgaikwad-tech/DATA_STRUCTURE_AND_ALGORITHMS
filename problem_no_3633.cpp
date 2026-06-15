@@ -17,12 +17,19 @@
 // Return the earliest possible time at which the tourist can finish both rides.
 
  
+#include <iostream>
+#include <vector>
+#include <climits>
+#include <algorithm>
+
+using namespace std;
+
 class Solution {
 public:
     int earliestFinishTime(vector<int>& landStartTime,
                            vector<int>& landDuration,
                            vector<int>& waterStartTime,
-                         vector<int>& waterDuration) {
+                           vector<int>& waterDuration) {
 
         int n = landStartTime.size();
         int m = waterStartTime.size();
@@ -32,7 +39,7 @@ public:
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
 
-               
+                // Land ride first, then water ride
                 int landFinish = landStartTime[i] + landDuration[i];
 
                 int waterStart = max(landFinish, waterStartTime[j]);
@@ -40,7 +47,7 @@ public:
 
                 ans = min(ans, waterFinish);
 
-              
+                // Water ride first, then land ride
                 int waterFinishFirst = waterStartTime[j] + waterDuration[j];
 
                 int landStart = max(waterFinishFirst, landStartTime[i]);
@@ -53,3 +60,24 @@ public:
         return ans;
     }
 };
+
+int main() {
+    Solution obj;
+
+    vector<int> landStartTime = {1, 5};
+    vector<int> landDuration = {3, 2};
+
+    vector<int> waterStartTime = {2, 6};
+    vector<int> waterDuration = {4, 1};
+
+    int result = obj.earliestFinishTime(
+        landStartTime,
+        landDuration,
+        waterStartTime,
+        waterDuration
+    );
+
+    cout << "Earliest Finish Time: " << result << endl;
+
+    return 0;
+}
