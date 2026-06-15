@@ -8,29 +8,32 @@
  
 
 
+#include <iostream>
+#include <algorithm>
 
+using namespace std;
 
+// Definition for singly-linked list.
+struct ListNode {
+    int val;
+    ListNode *next;
 
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
- */
+    ListNode() : val(0), next(nullptr) {}
+    ListNode(int x) : val(x), next(nullptr) {}
+    ListNode(int x, ListNode *next) : val(x), next(next) {}
+};
+
 class Solution {
 public:
     int pairSum(ListNode* head) {
-           ListNode *slow = head, *fast = head;
+        // Find middle
+        ListNode *slow = head, *fast = head;
         while (fast && fast->next) {
             slow = slow->next;
             fast = fast->next->next;
         }
 
-        
+        // Reverse second half
         ListNode *prev = nullptr, *curr = slow;
         while (curr) {
             ListNode *nextNode = curr->next;
@@ -39,7 +42,7 @@ public:
             curr = nextNode;
         }
 
- 
+        // Find maximum twin sum
         int ans = 0;
         ListNode *first = head, *second = prev;
 
@@ -52,3 +55,17 @@ public:
         return ans;
     }
 };
+
+int main() {
+    // Create linked list: 5 -> 4 -> 2 -> 1
+    ListNode* head = new ListNode(5);
+    head->next = new ListNode(4);
+    head->next->next = new ListNode(2);
+    head->next->next->next = new ListNode(1);
+
+    Solution obj;
+
+    cout << "Maximum Twin Sum = " << obj.pairSum(head) << endl;
+
+    return 0;
+}
