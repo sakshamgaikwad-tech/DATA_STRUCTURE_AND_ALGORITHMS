@@ -10,6 +10,12 @@
 // Return nums after the rearrangement.
 
 
+
+ #include <iostream>
+#include <vector>
+
+using namespace std;
+
 class Solution {
 public:
     vector<int> pivotArray(vector<int>& nums, int pivot) {
@@ -20,14 +26,16 @@ public:
             if (n < pivot) {
                 l.push_back(n);
             }
-
             else if (n == pivot) {
                 e.push_back(n);
-            } else {
+            }
+            else {
                 g.push_back(n);
             }
         }
+
         vector<int> result;
+
         result.insert(result.end(), l.begin(), l.end());
         result.insert(result.end(), e.begin(), e.end());
         result.insert(result.end(), g.begin(), g.end());
@@ -35,3 +43,20 @@ public:
         return result;
     }
 };
+
+int main() {
+    Solution obj;
+
+    vector<int> nums = {9, 12, 5, 10, 14, 3, 10};
+    int pivot = 10;
+
+    vector<int> result = obj.pivotArray(nums, pivot);
+
+    cout << "Result: ";
+    for (int x : result) {
+        cout << x << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
