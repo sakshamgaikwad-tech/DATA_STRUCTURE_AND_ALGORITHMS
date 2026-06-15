@@ -16,11 +16,11 @@
 
 // Output: "rij"
 
+#include <iostream>
+#include <vector>
+#include <string>
 
-
-
-
-
+using namespace std;
 
 class Solution {
 public:
@@ -43,3 +43,20 @@ public:
         return res;
     }
 };
+
+int main() {
+    Solution obj;
+
+    vector<string> words = {"abc", "hello", "xyz"};
+
+    vector<int> weights(26);
+    for (int i = 0; i < 26; i++) {
+        weights[i] = i + 1;  // a=1, b=2, ..., z=26
+    }
+
+    string result = obj.mapWordWeights(words, weights);
+
+    cout << "Result: " << result << endl;
+
+    return 0;
+}
